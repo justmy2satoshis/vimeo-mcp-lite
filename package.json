@@ -1,0 +1,45 @@
+{
+  "name": "vimeo-mcp-lite",
+  "version": "1.0.0",
+  "description": "Token-efficient MCP server for Vimeo API. Returns minimal payloads optimized for AI assistants.",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "vimeo-mcp-lite": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "vimeo",
+    "claude",
+    "ai",
+    "token-efficient",
+    "model-context-protocol"
+  ],
+  "author": "CCI",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/justmy2satoshis/vimeo-mcp-lite.git"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.3.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "dist/**/*",
+    "README.md"
+  ]
+}
